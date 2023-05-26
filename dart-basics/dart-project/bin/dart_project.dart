@@ -1,4 +1,5 @@
 import 'package:dart_project/dart_project.dart' as dart_project;
+import 'dart:io';
 
 void main() {
   print('Hello world');
@@ -18,4 +19,17 @@ void main() {
   print("Subtraction of two numbers = $sub");
   print("Multiplication of two numbers = $mul");
   print("Division of two numbers = $div");
+
+  /* Input your name */
+
+  print("Enter your name?");
+  String? name = stdin.readLineSync();
+  print("Your name is $name");
+
+  /* get square of a input number*/
+  print("Enter a number:");
+  String? value = stdin.readLineSync();
+  int intValue = int.parse(value.toString());
+  int squareValue = intValue * intValue;
+  print("Square of $intValue is equal to $squareValue");
 }
